@@ -1,0 +1,134 @@
+/* main */
+.member-login{
+    position: relative;
+}
+.member-login .login .title{
+    display: block;
+    font-size: 36px;
+    color: #EAF0ED;
+    background-color: #3F5D45;
+    line-height: 110px;
+    text-align: center;
+    margin: 0;
+}
+.member-login .login-input{
+    background-color: #3F5D45;
+    padding: 30px;
+    margin-top: 116px;
+}
+.login-input .account,
+.login-input .password{
+    height: 56px;
+    background-color: #EAF0ED;
+    display: flex;
+    align-items: center;
+}
+.login-input span{
+    font-size: 20px;
+    color: #3F5D45;
+    margin: 0 20px;
+}
+.login-input input{
+    height:100%;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+}
+.login-input input:focus{
+    border: none;
+}
+.login-input input::placeholder {
+    color: #8DA291;
+    font-size: 16px;
+}
+.login-input .password,
+.login-input .remember-me{
+    margin-top: 16px;
+}
+.login-input .remember-me #remember{
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin: 0 8px 0 0;
+}
+.login-input .remember-me label{
+    font-size: 16px;
+    color: #EAF0ED;
+}
+.member-login .login .login-btn{
+    width: 100%;
+    height: 65px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3F5D45;
+    background-color: #FFE180;
+    border: 0;
+    cursor: pointer;
+}
+
+.member-login .social-account{
+    background-color: #EAF0ED;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+.social-account > .title{
+    display: none;
+}
+.social-account .account-link{
+    display: flex;
+    margin: 30px;
+}
+.social-account .account-link a{
+    height: 56px;
+    flex:1;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account-link .facebook img{ width: 84px; }
+.account-link .google img{ width: 73px; }
+.account-link .yahoo img{ width: 75px; }
+.social-account .account-link a+a{
+    border-left: 1px solid #EAF0ED;
+}
+
+
+@media screen and (min-width:768px) {
+    .member-login{
+        margin: 30px 122px 80px 122px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .member-login .login-input{
+        margin: 0;
+    }
+    .member-login .login,
+    .member-login .social-account{
+        flex:1
+    }
+    .member-login .social-account{
+        position: static;
+        padding: 40px 0;
+    }
+    .social-account .title{
+        display: block;
+        font-size: 24px;
+        color: #8DA291;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    .social-account .account-link{
+        display: block;
+        margin: 0;
+    }
+    .social-account .account-link a{
+        margin: 16px 30px 0 30px;
+    }
+    .login-input .remember-me{
+        text-align: left;
+    }
+}

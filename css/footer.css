@@ -1,0 +1,140 @@
+/*--- footer ---*/
+/* email-submit */
+.email-submit{
+    padding: 30px;
+    background-color: #3F5D45;
+}
+.email-submit .title{
+    display: flex;
+}
+.email-submit .title .mini-logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.email-submit .mini-logo img{
+    display: block;
+    width: 100%;
+}
+.email-submit .title p{
+    font-size: 24px;
+    color: #EAF0ED;
+    margin: 0;
+}
+.email-submit .mail{
+    box-sizing: border-box;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: #EAF0ED;
+    margin-top: 30px;
+}
+.email-submit .mail span{
+    font-size: 24px;
+    color: #3F5D45;
+    padding-left: 20px;
+}
+.email-submit .mail input[type=email]{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #3F5D45;
+    background-color: transparent;
+    border: 0;
+    padding: 0 20px;
+}
+.email-submit .mail button{
+    font-size: 24px;
+    color: #3F5D45;
+    text-align: center;
+    background-color: #FFE180;
+    width: 64px;
+    height: 56px;
+    border: 0;
+    cursor: pointer;
+}
+@media screen and (min-width:768px) {
+    .email-submit{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 122px;
+    }
+    .email-submit .mail{
+        margin: 0;
+    }
+    .email-submit .mail{
+        width: 380px;
+    }
+}
+
+/* footer-section */
+.footer-section{
+    padding: 30px;
+    background-color: #EAF0ED;
+}
+.footer-section .logotype{
+    width: 172px;
+}
+.footer-section .logotype img{
+    display: block;
+    width: 100%;
+}
+.footer-section .contact{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-section .contact a{
+    font-size: 16px;
+    color: #3F5D45;
+    text-decoration: none;
+}
+.footer-section .contact p,.footer-section .copyright{
+    font-size: 16px;
+    color: #3F5D45;
+    margin: 0;
+}
+.footer-section .slogan{
+    display: none;
+}
+.footer-section .online-contact{
+    display: flex;
+    margin-top: 37px;
+}
+.footer-section .online-contact img{
+    display: block;
+    margin-right: 8px;
+    width: 32px;
+}
+.footer-section .copyright{
+    margin-top: 23px;
+}
+@media screen and (min-width:768px) {
+    .footer-section{
+        padding: 30px 122px;
+    }
+    .footer-section .contact-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-section .contact-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer-section .slogan{
+        display: block;
+        width: 60px;
+    }
+    .footer-section .slogan img{
+        display: block;
+        width: 100%;
+    }
+    .footer-section .footer-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+}

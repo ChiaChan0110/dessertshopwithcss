@@ -1,0 +1,88 @@
+
+*{
+    box-sizing: border-box;
+}
+.shopping-success{
+    position: relative;
+}
+.shopping-success img{
+    display: block;
+    width: 100%;
+    height: 518px;
+    object-fit: cover;
+    object-position: center center;
+}
+.progress{
+    display: flex;
+    align-items: center;
+}
+.progress .shape{
+    font-size: 16px;
+    color: #8DA291;
+}
+.progress .line{
+    width: 51px;
+    height: 2px;
+    background-color: #8DA291;
+}
+.shopping-success .success-msg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.success-msg .progress .shape{
+    font-size: 20px;
+    color: #3F5D45;
+}
+.success-msg .progress .line{
+    width: 65px;
+    background-color: #3F5D45;
+}
+.success-msg .pay-success{
+    width: 190px;
+    margin-top: 30px;
+}
+.success-msg .pay-success img{
+    display: block;
+    width: 100%;
+    height: 46px;
+}
+.yellow-btn{
+    width: 100%;
+    height: 65px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3F5D45;
+    background-color: #FFE180;
+    border: 0;
+    margin-top: 14px;
+}
+.shopping-success .yellow-btn{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 65px;
+    margin: 0;
+}
+@media screen and (min-width:768px) {
+    .shopping-success{
+        margin: 0 42px 60px 42px;
+    }
+    .shopping-success img{
+        height: 460px;
+    }
+    .shopping-success .success-msg{
+        position: absolute;
+        top: 128px;
+        transform: translate(-50%, 0);
+    }
+    .shopping-success .yellow-btn{
+        display: block;
+        width: 300px;
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}

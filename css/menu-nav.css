@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #fffdef;
+}
+body{
+    margin: auto;
+    background-color: #fff;
+}
+@media screen and (min-width:768px) {
+    body{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+/*--- header ---*/
+/* navbar */
+.navbar{
+    display: none;
+}
+.mobile-navbar{
+    padding: 30px;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-navbar .menu-btn{
+    display: block;
+    order: -1;
+    font-size: 20px;
+    background-color: transparent;
+    color: #3F5D45;
+    border: none;
+}
+.mobile-navbar .menu{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 84px;
+    left: -300%;
+    z-index: 10;
+    background-color: rgba(256, 256, 256, .9);
+    transition: .5s;
+}
+.menu.show {
+    left: 0;
+}
+.mobile-navbar .menu ul{
+    padding: 0;
+}
+.mobile-navbar .menu ul li{
+    list-style: none;
+    text-align: center;
+    padding: 20px 30px;
+}
+.mobile-navbar .menu ul a{
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    color: #3F5D45;
+}
+.mobile-navbar .main-logo{
+    width: 115px;
+}
+.mobile-navbar .cart{
+    font-size: 20px;
+    color: #3F5D45;
+}
+@media screen and (min-width:768px) {
+    .mobile-navbar{
+        display: none;
+    }
+    .navbar{
+        max-width: 1024px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 102px;
+        padding: 30px 42px;
+    }
+    .navbar .logo{
+        width: 220px;
+    }
+    .navbar .logo img{
+        display: block;
+        width: 100%;
+    }
+    .navbar .menu{
+        display: flex;
+    }
+    .navbar .menu ul{
+        display: flex;
+        padding: 0;
+        margin: 0 80px 0 0;
+    }
+    .navbar .menu ul li{
+        list-style: none;
+    }
+    .navbar .menu ul li:hover a{
+        color:#FFE180;
+    }
+    .navbar .menu ul li+li{
+        margin-left: 60px ;
+    }
+    .navbar .menu ul a{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        color: #3F5D45;
+    }
+    .navbar .menu .cart{
+        display: inline-block;
+        font-size: 20px;
+        color: #3F5D45;
+    }
+}
