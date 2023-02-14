@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="css/menu-nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://kit.fontawesome.com/c910acea21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">
+                <a href="home.html"><img src="images/logo-all-dark.svg"></a>
+            </h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+
+                <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+        <nav class="mobile-navbar">
+            <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+            </div>
+
+            <h1 class="main-logo">
+                <a href="/home.html"><img src="images/logotype-sm-dark.svg"></a>
+            </h1>
+            
+            <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="cart-list">
+            <p class="your-cart">您的購物車</p>
+            <ul>
+                <li>
+                    <div class="product-info">
+                        <div class="product-img">
+                            <img src="https://bit.ly/2QvsT63">
+                        </div>
+                        <div class="product-content">
+                            <div class="title">
+                                <p>焦糖馬卡龍</p>
+                                <p>NT$ 450</p>
+                            </div>
+                            <div class="number">
+                                <button>-</button>
+                                <input type="number" min="1" max="9" value="2">
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-price">NT$ 900</p>
+                    <a href="javascript:;" class="delete"><i class="fa-regular fa-trash-can"></i></a>
+                </li>
+                <li>
+                    <div class="product-info">
+                        <div class="product-img">
+                            <img src="https://bit.ly/2zBDAxX">
+                        </div>
+                        <div class="product-content">
+                            <div class="title">
+                                <p>焦糖馬卡龍</p>
+                                <p>NT$ 450</p>
+                            </div>
+                            <div class="number">
+                                <button>-</button>
+                                <input type="number" min="1" max="9" value="2">
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-price">NT$ 900</p>
+                    <a href="javascript:;" class="delete"><i class="fa-regular fa-trash-can"></i></a>
+                </li>
+                <li>
+                    <div class="product-info">
+                        <div class="product-img">
+                            <img src="https://bit.ly/2zKOP7w">
+                        </div>
+                        <div class="product-content">
+                            <div class="title">
+                                <p>焦糖馬卡龍</p>
+                                <p>NT$ 450</p>
+                            </div>
+                            <div class="number">
+                                <button>-</button>
+                                <input type="number" min="1" max="9" value="2">
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-price">NT$ 900</p>
+                    <a href="javascript:;" class="delete"><i class="fa-regular fa-trash-can"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="total-price">
+            <p class="title">訂單摘要</p>
+            <div class="product-price">
+                <p class="name">小計</p>
+                <p class="price">NT$ 2700</p>
+            </div>
+            <div class="freight">
+                <p class="name">運費</p>
+                <p class="price">NT$ 300</p>
+            </div>
+            <div class="sum">
+                <p class="name">總計</p>
+                <p class="price">NT$ 3000</p>
+            </div>
+            <a href="checkout-1.html" class="checkout">結帳</a>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <form action="#" method="post" class="email-submit" onsubmit="return false;">
+            <div class="title">
+                <div class="mini-logo">
+                    <img src="images/logo-light.svg" alt="mini-logo">
+                </div>
+                <p>訂閱你我的甜蜜郵件</p>
+            </div>
+            <div class="mail">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" name="email">
+                <button type="submit">➜</button>
+            </div>
+        </form>
+        <div class="footer-section">
+            <div class="contact-list">
+                <div class="contact-info">
+                    <div class="logotype">
+                        <img src="images/logotype-sm-dark.svg" alt="logotype">
+                    </div>
+                    <div class="contact">
+                        <a href="tel:07-1234-5678">07-1234-5678</a>
+                        <a href="mailto: sweeraste@email.com">sweeraste@email.com</a>
+                        <p class="address">800高雄市新興區幸福路520號</p>
+                    </div>
+                </div>
+                <div class="slogan">
+                    <img src="images/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子">
+                </div>
+            </div>
+            <div class="footer-line">
+                <div class="online-contact">
+                    <a href="#"><img src="images/ic-line@.svg" alt="line"></a>
+                    <a href="#"><img src="images/ic-facebook.svg" alt="facebook"></a>
+                </div>
+                <p class="copyright">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/pk-ui-light.js"></script>
+    <script>
+        ;(function(){
+            const menuButton = document.querySelector(".menu-btn");
+            menuButton.addEventListener('click', toggleMenu);
+        })()
+    </script>
+</body>
+</html>
