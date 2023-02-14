@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/menu-nav.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/c910acea21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">
+                <a href="home.html"><img src="images/logo-all-dark.svg"></a>
+            </h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+
+                <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+        <nav class="mobile-navbar">
+            <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+            </div>
+
+            <h1 class="main-logo">
+                <a href="/home.html"><img src="images/logotype-sm-dark.svg"></a>
+            </h1>
+            
+            <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="member-login">
+            <form action="#" method="post" class="login" onsubmit="return false;">
+                <h2 class="title">會員登入</h2>
+                <div class="login-input">
+                    <div class="account">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <input type="text" placeholder="電子信箱/手機號碼">
+                    </div>
+                    <div class="password">
+                        <span><i class="fa-sharp fa-solid fa-key"></i></span>
+                        <input type="password" placeholder="請輸入使用者密碼">
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">記住我</label>
+                    </div>
+                </div>
+                <button type="submit" class="login-btn">登入帳號</button>
+            </form>
+            <div class="social-account">
+                <p class="title"> —— 連結社群帳號 —— </p>
+                <div class="account-link">
+                    <a href="javascript:;" class="facebook">
+                        <img src="images/ic-facebook-logotype.svg" alt="facebook">
+                    </a>
+                    <a href="javascript:;" class="google">
+                        <img src="images/ic-google.svg" alt="google">
+                    </a>
+                    <a href="javascript:;" class="yahoo">
+                        <img src="images/ic-yahoo.svg" alt="yahoo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <form action="#" method="post" class="email-submit" onsubmit="return false;">
+            <div class="title">
+                <div class="mini-logo">
+                    <img src="images/logo-light.svg" alt="mini-logo">
+                </div>
+                <p>訂閱你我的甜蜜郵件</p>
+            </div>
+            <div class="mail">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" name="email">
+                <button type="submit">➜</button>
+            </div>
+        </form>
+        <div class="footer-section">
+            <div class="contact-list">
+                <div class="contact-info">
+                    <div class="logotype">
+                        <img src="images/logotype-sm-dark.svg" alt="logotype">
+                    </div>
+                    <div class="contact">
+                        <a href="tel:07-1234-5678">07-1234-5678</a>
+                        <a href="mailto: sweeraste@email.com">sweeraste@email.com</a>
+                        <p class="address">800高雄市新興區幸福路520號</p>
+                    </div>
+                </div>
+                <div class="slogan">
+                    <img src="images/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子">
+                </div>
+            </div>
+            <div class="footer-line">
+                <div class="online-contact">
+                    <a href="#"><img src="images/ic-line@.svg" alt="line"></a>
+                    <a href="#"><img src="images/ic-facebook.svg" alt="facebook"></a>
+                </div>
+                <p class="copyright">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/pk-ui-light.js"></script>
+    <script>
+        ;(function(){
+            const menuButton = document.querySelector(".menu-btn");
+            menuButton.addEventListener('click', toggleMenu);
+        })()
+    </script>
+</body>
+</html>
