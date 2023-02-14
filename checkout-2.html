@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout-2</title>
+    <link rel="stylesheet" href="css/menu-nav.css">
+    <link rel="stylesheet" href="css/checkout-2.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/c910acea21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">
+                <a href="home.html"><img src="images/logo-all-dark.svg"></a>
+            </h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+
+                <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+        <nav class="mobile-navbar">
+            <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+            </div>
+
+            <h1 class="main-logo">
+                <a href="/home.html"><img src="images/logotype-sm-dark.svg"></a>
+            </h1>
+            
+            <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <form action="#" method="post" class="pk-form pay-form">
+            <div class="title">
+                <h3>付款</h3>
+                <div class="progress">
+                    <span class="shape"><i class="fa-sharp fa-solid fa-circle-check"></i></span>
+                    <span class="line"></span>
+                    <span class="shape"><i class="fa-regular fa-circle-dot"></i></span>
+                    <span class="line"></span>
+                    <span class="shape"><i class="fa-regular fa-circle"></i></span>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col">
+                     <label for="card">信用卡卡號</label>
+                     <div class="credit form-control">
+                        <input type="text" id="card" placeholder="9012-3456-7890-1234">
+                        <span><i class="fa-regular fa-credit-card"></i></span>
+                     </div>
+                 </div>
+             </div>
+            <div class="row row-alignend">
+                <div class="col">
+                    <label for="last-name">持卡人姓名</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="王">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="first-name" placeholder="小明">
+                </div>
+            </div>
+            <div class="row row-alignend">
+                <div class="col">
+                    <label for="last-name">有效期限</label>
+                    <select class="form-control" id="month">
+                        <option value="" selected disabled hidden>月</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-control" id="year">
+                        <option value="" selected disabled hidden>年</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row row-alignend">
+                <div class="col">
+                    <label for="three-code">背面末三碼</label>
+                    <input type="text" class="form-control" id="three-code" placeholder="123">
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <a href="checkout-3.html" class="yellow-btn">下一步</a>
+        </form>
+
+        <div class="right-side">
+            <div class="total-price">
+                <p class="title">訂單摘要</p>
+                <div class="product-price">
+                    <p class="name">小計</p>
+                    <p class="price">NT$ 2700</p>
+                </div>
+                <div class="freight">
+                    <p class="name">運費</p>
+                    <p class="price">NT$ 300</p>
+                </div>
+                <div class="sum">
+                    <p class="name">總計</p>
+                    <p class="price">NT$ 3000</p>
+                </div>
+            </div>
+            <div class="buy-list">
+                <p class="title">購物清單</p>
+                <ul>
+                    <li>
+                        <div class="product-img">
+                            <img src="https://bit.ly/2QvsT63">
+                        </div>
+                        <div class="product-content">
+                            <p>焦糖馬卡龍 (2)</p>
+                            <p>NT$ 900</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <img src="https://bit.ly/2zBDAxX">
+                        </div>
+                        <div class="product-content">
+                            <p>焦糖馬卡龍 (2)</p>
+                            <p>NT$ 900</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <img src="https://bit.ly/2zKOP7w">
+                        </div>
+                        <div class="product-content">
+                            <p>焦糖馬卡龍 (2)</p>
+                            <p>NT$ 900</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <form action="#" method="post" class="email-submit" onsubmit="return false;">
+            <div class="title">
+                <div class="mini-logo">
+                    <img src="images/logo-light.svg" alt="mini-logo">
+                </div>
+                <p>訂閱你我的甜蜜郵件</p>
+            </div>
+            <div class="mail">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" name="email">
+                <button type="submit">➜</button>
+            </div>
+        </form>
+        <div class="footer-section">
+            <div class="contact-list">
+                <div class="contact-info">
+                    <div class="logotype">
+                        <img src="images/logotype-sm-dark.svg" alt="logotype">
+                    </div>
+                    <div class="contact">
+                        <a href="tel:07-1234-5678">07-1234-5678</a>
+                        <a href="mailto: sweeraste@email.com">sweeraste@email.com</a>
+                        <p class="address">800高雄市新興區幸福路520號</p>
+                    </div>
+                </div>
+                <div class="slogan">
+                    <img src="images/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子">
+                </div>
+            </div>
+            <div class="footer-line">
+                <div class="online-contact">
+                    <a href="#"><img src="images/ic-line@.svg" alt="line"></a>
+                    <a href="#"><img src="images/ic-facebook.svg" alt="facebook"></a>
+                </div>
+                <p class="copyright">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/pk-ui-light.js"></script>
+    <script>
+        ;(function(){
+            const menuButton = document.querySelector(".menu-btn");
+            menuButton.addEventListener('click', toggleMenu);
+        })()
+    </script>
+</body>
+</html>
